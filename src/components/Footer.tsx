@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/VELDIOR-logo.png";
+import logo from "@/assets/veldior-logo.png";
 import { BRAND } from "@/config/brand";
 import { whatsappInquiryUrl } from "@/lib/whatsapp";
 
