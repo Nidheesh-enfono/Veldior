@@ -26,11 +26,25 @@ function Shop() {
 
   return (
     <>
-      <section className="border-b border-border/60 bg-noir">
-        <div className="mx-auto max-w-7xl px-6 py-20 text-center md:py-28">
+      <section className="relative overflow-hidden border-b border-border/60 bg-noir">
+        <div
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_45%_at_50%_0%,color-mix(in_oklab,var(--gold)_12%,transparent),transparent_65%)]"
+          aria-hidden
+        />
+        <div className="relative mx-auto max-w-7xl px-6 pb-14 pt-8 text-center md:pb-16 md:pt-10">
           <p className="text-[10px] uppercase tracking-luxury text-gold">The Collection</p>
-          <h1 className="mt-4 font-display text-5xl md:text-7xl">Every Scent, A Story</h1>
-          <p className="mx-auto mt-5 max-w-xl text-sm text-muted-foreground">
+
+          <div className="mx-auto my-4 flex max-w-xs items-center justify-center gap-3 md:my-5">
+            <span className="h-px flex-1 bg-linear-to-r from-transparent to-gold/50" />
+            <span className="font-display text-[10px] text-gold/80">✦</span>
+            <span className="h-px flex-1 bg-linear-to-l from-transparent to-gold/50" />
+          </div>
+
+          <h1 className="font-display text-5xl font-light leading-[1.08] tracking-display md:text-7xl">
+            Every Scent, <span className="italic text-gold">A Story</span>
+          </h1>
+
+          <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed tracking-wide text-muted-foreground md:mt-5">
             Six fragrances, each composed around a single defining note. Add to your bag and
             complete your order instantly through WhatsApp.
           </p>

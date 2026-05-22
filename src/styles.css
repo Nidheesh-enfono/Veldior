@@ -1,4 +1,4 @@
-@import "tailwindcss" source(none);
+@import "tailwindcss";
 @source "../src";
 @import "tw-animate-css";
 
@@ -107,5 +107,11 @@
   }
   .tracking-luxury {
     letter-spacing: 0.32em;
+  }
+  .tracking-brand {
+    letter-spacing: 0.2em;
+  }
+  .tracking-display {
+    letter-spacing: 0.04em;
   }
 }
