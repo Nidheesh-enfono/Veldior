@@ -23,7 +23,7 @@ function About() {
         <div className="mx-auto max-w-4xl px-6 py-24 text-center md:py-32">
           <p className="text-[10px] uppercase tracking-luxury text-gold">Our Story</p>
 
-          <h1 className="mt-4 font-display text-5xl md:text-7xl">About VELDIOR</h1>
+          <h1 className="mt-4 font-display text-5xl md:text-7xl">About Veldior</h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground">
             {BRAND.name} started in {BRAND.city.split(" · ")[0]} with a goal of creating quality

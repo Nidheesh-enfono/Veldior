@@ -3,7 +3,7 @@
 export const BRAND = {
   name: "VELDIOR",
   tagline: "Crafting Scents. Defining Luxury.",
-  whatsappNumber: "919961659471", // <-- change to your WhatsApp business number
+  whatsappNumber: "919961659471",
   email: "veldiorfragrance@gmail.com",
   city: "India",
   currency: "INR",

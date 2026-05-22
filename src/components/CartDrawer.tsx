@@ -35,8 +35,10 @@ export function CartDrawer() {
       >
         <div className="flex items-center justify-between border-b border-border px-6 py-5">
           <div>
-            <p className="text-[10px] uppercase tracking-luxury text-muted-foreground">Your Selection</p>
-            <h3 className="font-display text-2xl text-gold">Atelier Bag</h3>
+            <p className="text-[10px] uppercase tracking-luxury text-muted-foreground">
+              Your Selection
+            </p>
+            <h3 className="font-display text-2xl text-gold">VELDIOR Bag</h3>
           </div>
           <button
             onClick={() => setOpen(false)}
@@ -120,7 +122,9 @@ export function CartDrawer() {
         {count > 0 && (
           <div className="border-t border-border px-6 py-5">
             <div className="flex items-baseline justify-between">
-              <span className="text-xs uppercase tracking-luxury text-muted-foreground">Subtotal</span>
+              <span className="text-xs uppercase tracking-luxury text-muted-foreground">
+                Subtotal
+              </span>
               <span className="font-display text-3xl text-gold">
                 {BRAND.currencySymbol}
                 {subtotal.toFixed(0)}
