@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Discover VELDIOR — a maison of rare essences. Order via WhatsApp concierge with worldwide delivery.",
+          "Discover VELDIOR — a luxury perfume brand crafted with rare essences. Order directly on WhatsApp.",
       },
       { property: "og:image", content: hero },
     ],
@@ -38,8 +38,8 @@ function Index() {
               <span className="block italic text-gold">unforgotten night.</span>
             </h1>
             <p className="mt-6 max-w-md text-base text-muted-foreground">
-              A maison of rare essences — oud, ambergris, Bulgarian rose. Hand-blended in small batches,
-              delivered through our private WhatsApp concierge.
+              A collection of rare essences — oud, ambergris, and Bulgarian rose. Hand-blended in small batches,
+              delivered personally through WhatsApp.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link
@@ -55,7 +55,7 @@ function Index() {
                 rel="noreferrer"
                 className="border-b border-gold/60 pb-1 text-xs uppercase tracking-luxury text-gold hover:border-gold"
               >
-                Ask the Concierge
+                Speak With Us
               </a>
             </div>
           </div>
@@ -77,10 +77,10 @@ function Index() {
       <section className="border-y border-border/60 bg-card/30">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-around gap-6 px-6 py-6 text-[10px] uppercase tracking-luxury text-muted-foreground">
           <span>Hand-blended in {BRAND.city.split(" · ")[0]}</span>
+          {/* <span className="text-gold">◆</span>
+          <span>Worldwide delivery</span> */}
           <span className="text-gold">◆</span>
-          <span>Worldwide delivery</span>
-          <span className="text-gold">◆</span>
-          <span>WhatsApp concierge</span>
+          <span>WhatsApp Support</span>
           <span className="text-gold">◆</span>
           <span>Cruelty-free essences</span>
         </div>
@@ -90,9 +90,10 @@ function Index() {
       <section className="mx-auto max-w-7xl px-6 py-24">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
-            <p className="text-[10px] uppercase tracking-luxury text-gold">Maison Selection</p>
+            <p className="text-[10px] uppercase tracking-luxury text-gold">Featured Collection</p>
             <h2 className="mt-3 font-display text-4xl md:text-5xl">Signature Fragrances</h2>
           </div>
+
           <Link
             to="/shop"
             className="border-b border-gold/60 pb-1 text-xs uppercase tracking-luxury text-gold"
@@ -117,9 +118,9 @@ function Index() {
             <br />
             it is the memory you leave behind.”
           </h2>
-          <p className="mt-8 text-sm uppercase tracking-luxury text-muted-foreground">
+          {/* <p className="mt-8 text-sm uppercase tracking-luxury text-muted-foreground">
             — Élise VELDIOR, Founder
-          </p>
+          </p> */}
         </div>
       </section>
     </>

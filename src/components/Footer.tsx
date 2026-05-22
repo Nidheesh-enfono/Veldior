@@ -14,16 +14,16 @@ export function Footer() {
               <span className="font-display text-2xl tracking-[0.25em] text-gold">VELDIOR</span>
             </div>
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-              {BRAND.tagline} Hand-blended in small batches, shipped worldwide from our ateliers in {BRAND.city}.
+              {BRAND.tagline} Hand-blended in small batches.
             </p>
           </div>
 
           <div>
-            <h4 className="text-xs uppercase tracking-luxury text-gold">Maison</h4>
+            <h4 className="text-xs uppercase tracking-luxury text-gold">Explore</h4>
             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
               <li><Link to="/shop" className="hover:text-gold">Collection</Link></li>
               <li><Link to="/about" className="hover:text-gold">Our Story</Link></li>
-              <li><Link to="/contact" className="hover:text-gold">Concierge</Link></li>
+              <li><Link to="/contact" className="hover:text-gold">Contact</Link></li>
             </ul>
           </div>
 
@@ -38,7 +38,7 @@ export function Footer() {
                   rel="noreferrer"
                   className="hover:text-gold"
                 >
-                  WhatsApp Concierge
+                  WhatsApp Contact
                 </a>
               </li>
               <li>{BRAND.city}</li>
@@ -47,7 +47,8 @@ export function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-border/60 pt-8 text-xs uppercase tracking-luxury text-muted-foreground md:flex-row">
-          <p>© {new Date().getFullYear()} {BRAND.name}. All rights reserved.</p>
+          {/* <p>© {new Date().getFullYear()} {BRAND.name}. All rights reserved.</p> */}
+          <p>© {new Date().getFullYear()} {BRAND.name}.</p>
           <p>Crafted with rare essences</p>
         </div>
       </div>

@@ -12,7 +12,7 @@ export function Header() {
   const links = [
     { to: "/", label: "Home" },
     { to: "/shop", label: "Collection" },
-    { to: "/about", label: "Maison" },
+    { to: "/about", label: "About" },
     { to: "/contact", label: "Contact" },
   ] as const;
 
