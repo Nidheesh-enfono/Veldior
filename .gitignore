@@ -16,7 +16,10 @@ dist-ssr
 .nitro
 *.local
 
-# Wrangler / Cloudflare
+# Vercel / Nitro
+.vercel/
+
+# Wrangler / Cloudflare (legacy)
 .wrangler/
 .dev.vars
 
