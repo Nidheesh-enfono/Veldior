@@ -72,11 +72,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "VELDIOR — Crafting Scents. Defining Luxury." },
-{
-  name: "description",
-  content:
-    "VELDIOR is a luxury perfume brand creating hand-blended fragrances with rare essences.",
-},
+      {
+        name: "description",
+        content:
+          "VELDIOR is a luxury perfume brand creating hand-blended fragrances with rare essences.",
+      },
       { property: "og:title", content: "VELDIOR — Crafting Scents. Defining Luxury." },
       { property: "og:description", content: "Hand-blended luxury perfumes." },
       { property: "og:type", content: "website" },

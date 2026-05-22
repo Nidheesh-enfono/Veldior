@@ -30,20 +30,16 @@ function Index() {
       <section className="relative isolate overflow-hidden bg-noir">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 pb-20 pt-16 md:grid-cols-2 md:items-center md:gap-6 md:pb-32 md:pt-24">
           <div>
-            <p className="text-[11px] uppercase tracking-luxury text-gold">
-              {BRAND.tagline}
-            </p>
+            <p className="text-[11px] uppercase tracking-luxury text-gold">{BRAND.tagline}</p>
 
             <h1 className="mt-6 font-display text-5xl leading-[1.05] text-balance text-foreground md:text-7xl lg:text-8xl">
               Find Your
-              <span className="block italic text-gold">
-                Signature Fragrance
-              </span>
+              <span className="block italic text-gold">Signature Fragrance</span>
             </h1>
 
             <p className="mt-6 max-w-md text-base text-muted-foreground">
-              Explore our collection of carefully crafted fragrances made with
-              quality ingredients. Order directly through WhatsApp.
+              Explore our collection of carefully crafted fragrances made with quality ingredients.
+              Order directly through WhatsApp.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -57,7 +53,7 @@ function Index() {
 
               <a
                 href={whatsappInquiryUrl(
-                  `Hello ${BRAND.name}, I'd like a fragrance recommendation.`
+                  `Hello ${BRAND.name}, I'd like a fragrance recommendation.`,
                 )}
                 target="_blank"
                 rel="noreferrer"
@@ -101,13 +97,9 @@ function Index() {
       <section className="mx-auto max-w-7xl px-6 py-24">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
-            <p className="text-[10px] uppercase tracking-luxury text-gold">
-              Our Collection
-            </p>
+            <p className="text-[10px] uppercase tracking-luxury text-gold">Our Collection</p>
 
-            <h2 className="mt-3 font-display text-4xl md:text-5xl">
-              Featured Fragrances
-            </h2>
+            <h2 className="mt-3 font-display text-4xl md:text-5xl">Featured Fragrances</h2>
           </div>
 
           <Link
