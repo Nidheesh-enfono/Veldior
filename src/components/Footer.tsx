@@ -47,7 +47,7 @@ export function Footer() {
                 <a
                   href={whatsappInquiryUrl(`Hello ${BRAND.name}, I'd like to learn more.`)}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="hover:text-gold"
                 >
                   WhatsApp Contact

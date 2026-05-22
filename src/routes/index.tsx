@@ -56,7 +56,7 @@ function Index() {
                   `Hello ${BRAND.name}, I'd like a fragrance recommendation.`,
                 )}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="border-b border-gold/60 pb-1 text-xs uppercase tracking-luxury text-gold hover:border-gold"
               >
                 Chat on WhatsApp

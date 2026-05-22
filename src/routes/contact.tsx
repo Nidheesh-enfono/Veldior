@@ -22,10 +22,9 @@ function Contact() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
-  const send = () => {
-    const text = `Hello ${BRAND.name},\n\nI'm ${name || "—"}.\n\n${message || "I'd like to learn more about your fragrances."}`;
-    window.open(whatsappInquiryUrl(text), "_blank");
-  };
+  const whatsappUrl = whatsappInquiryUrl(
+    `Hello ${BRAND.name},\n\nI'm ${name || "—"}.\n\n${message || "I'd like to learn more about your fragrances."}`,
+  );
 
   return (
     <>
@@ -90,12 +89,14 @@ function Contact() {
                 placeholder="I'd love a recommendation for an evening fragrance…"
               />
             </div>
-            <button
-              onClick={send}
-              className="w-full bg-gradient-gold py-4 text-xs uppercase tracking-luxury text-primary-foreground transition-transform hover:scale-[1.01]"
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex w-full items-center justify-center bg-gradient-gold py-4 text-xs uppercase tracking-luxury text-primary-foreground transition-transform hover:scale-[1.01]"
             >
               Send on WhatsApp
-            </button>
+            </a>
           </div>
         </div>
       </section>
