@@ -54,7 +54,7 @@ function Contact() {
             </li>
             <li>
               <span className="block text-[10px] uppercase tracking-luxury text-gold">Hours</span>
-              Mon — Sat · 10am — 6pm
+              Mon — Sun · 9am — 9pm
             </li>
           </ul>
         </div>
