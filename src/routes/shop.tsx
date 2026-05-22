@@ -31,8 +31,8 @@ function Shop() {
           <p className="text-[10px] uppercase tracking-luxury text-gold">The Collection</p>
           <h1 className="mt-4 font-display text-5xl md:text-7xl">Every Scent, A Story</h1>
           <p className="mx-auto mt-5 max-w-xl text-sm text-muted-foreground">
-            Six fragrances, each composed around a single defining note. Add to your bag and complete
-            your order instantly through WhatsApp.
+            Six fragrances, each composed around a single defining note. Add to your bag and
+            complete your order instantly through WhatsApp.
           </p>
         </div>
       </section>
@@ -43,10 +43,11 @@ function Shop() {
             <button
               key={f}
               onClick={() => setFilter(f)}
-              className={`border px-5 py-2 text-[10px] uppercase tracking-luxury transition-colors ${filter === f
+              className={`border px-5 py-2 text-[10px] uppercase tracking-luxury transition-colors ${
+                filter === f
                   ? "border-gold bg-gradient-gold text-primary-foreground"
                   : "border-border text-muted-foreground hover:border-gold hover:text-gold"
-                }`}
+              }`}
             >
               {f}
             </button>
