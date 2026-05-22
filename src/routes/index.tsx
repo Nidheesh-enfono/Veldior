@@ -4,7 +4,7 @@ import { products } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
 import { BRAND } from "@/config/brand";
 import { whatsappInquiryUrl } from "@/lib/whatsapp";
-import hero from "@/assets/hero-perfume.jpg";
+import hero from "@/assets/hero-perfume.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
