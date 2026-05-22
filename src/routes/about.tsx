@@ -5,13 +5,13 @@ export const Route = createFileRoute("/about")({
   component: About,
   head: () => ({
     meta: [
-      { title: "Maison — VELDIOR" },
+      { title: "About — VELDIOR" },
       {
         name: "description",
         content:
-          "The VELDIOR story — a maison founded on rare essences, slow craft and obsessive devotion to the art of perfumery.",
+          "Learn about VELDIOR, a perfume brand focused on quality ingredients, small-batch production, and personal customer support.",
       },
-      { property: "og:title", content: "The VELDIOR Maison" },
+      { property: "og:title", content: "About VELDIOR" },
     ],
   }),
 });
@@ -21,46 +21,78 @@ function About() {
     <>
       <section className="bg-noir">
         <div className="mx-auto max-w-4xl px-6 py-24 text-center md:py-32">
-          <p className="text-[10px] uppercase tracking-luxury text-gold">Established 2014</p>
-          <h1 className="mt-4 font-display text-5xl md:text-7xl">The Maison</h1>
+          <p className="text-[10px] uppercase tracking-luxury text-gold">Our Story</p>
+
+          <h1 className="mt-4 font-display text-5xl md:text-7xl">
+            About VELDIOR
+          </h1>
+
           <p className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground">
-            {BRAND.name} was born in a small atelier in {BRAND.city.split(" · ")[0]} — a single perfumer,
-            an obsession with raw materials, and a quiet refusal of the ordinary.
+            {BRAND.name} started in {BRAND.city.split(" · ")[0]} with a goal of
+            creating quality fragrances using carefully selected ingredients and
+            small-batch production.
           </p>
         </div>
       </section>
 
       <section className="mx-auto grid max-w-6xl gap-16 px-6 py-24 md:grid-cols-2 md:gap-24">
         <div>
-          <p className="text-[10px] uppercase tracking-luxury text-gold">Slow Craft</p>
-          <h2 className="mt-3 font-display text-3xl md:text-4xl">Months, not minutes.</h2>
+          <p className="text-[10px] uppercase tracking-luxury text-gold">
+            Craftsmanship
+          </p>
+
+          <h2 className="mt-3 font-display text-3xl md:text-4xl">
+            Made with care.
+          </h2>
+
           <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
-            Every VELDIOR fragrance is aged for a minimum of six months in dark oak. The essences settle,
-            soften, and reveal a depth that rushed production simply cannot achieve.
+            Every VELDIOR fragrance is blended in small batches to maintain
+            consistency and quality in every bottle.
           </p>
         </div>
+
         <div>
-          <p className="text-[10px] uppercase tracking-luxury text-gold">Rare Essences</p>
-          <h2 className="mt-3 font-display text-3xl md:text-4xl">Sourced by hand.</h2>
+          <p className="text-[10px] uppercase tracking-luxury text-gold">
+            Ingredients
+          </p>
+
+          <h2 className="mt-3 font-display text-3xl md:text-4xl">
+            Carefully selected.
+          </h2>
+
           <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
-            Bulgarian rose from the Valley of Roses. Cambodian oud from sustainable producers.
-            Ambergris ethically gathered from the Atlantic shore. We source what we love.
+            We use quality ingredients including oud, rose, amber, woods, and
+            spices sourced from trusted suppliers.
           </p>
         </div>
+
         <div>
-          <p className="text-[10px] uppercase tracking-luxury text-gold">Small Batches</p>
-          <h2 className="mt-3 font-display text-3xl md:text-4xl">300 bottles, no more.</h2>
+          <p className="text-[10px] uppercase tracking-luxury text-gold">
+            Small Batch Production
+          </p>
+
+          <h2 className="mt-3 font-display text-3xl md:text-4xl">
+            Limited quantities.
+          </h2>
+
           <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
-            Each fragrance is produced in batches of three hundred. When a batch sells out, we begin the
-            slow craft again. Nothing is rushed. Nothing is mass.
+            Our fragrances are produced in limited quantities to help maintain
+            attention to detail and product quality.
           </p>
         </div>
+
         <div>
-          <p className="text-[10px] uppercase tracking-luxury text-gold">Personal Concierge</p>
-          <h2 className="mt-3 font-display text-3xl md:text-4xl">A real human, on WhatsApp.</h2>
+          <p className="text-[10px] uppercase tracking-luxury text-gold">
+            Customer Support
+          </p>
+
+          <h2 className="mt-3 font-display text-3xl md:text-4xl">
+            Real support on WhatsApp.
+          </h2>
+
           <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
-            Every order is confirmed personally. Want a recommendation? A custom blend? Gift wrapping?
-            Message our concierge. You'll always speak with a perfumer, never a bot.
+            Need help choosing a fragrance or placing an order? Message us on
+            WhatsApp and our team will assist you directly.
           </p>
         </div>
       </section>

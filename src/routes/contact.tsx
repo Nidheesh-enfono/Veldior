@@ -7,13 +7,13 @@ export const Route = createFileRoute("/contact")({
   component: Contact,
   head: () => ({
     meta: [
-      { title: "Concierge — VELDIOR" },
+      { title: "Contact Us — VELDIOR" },
       {
         name: "description",
         content:
-          "Speak with the VELDIOR concierge on WhatsApp. Recommendations, custom blends, gifting and worldwide delivery.",
+          "Connect with VELDIOR on WhatsApp for fragrance recommendations, custom blends, gifting, and worldwide delivery.",
       },
-      { property: "og:title", content: "VELDIOR Concierge" },
+      { property: "og:title", content: "Contact VELDIOR" },
     ],
   }),
 });
@@ -31,18 +31,17 @@ function Contact() {
     <>
       <section className="bg-noir">
         <div className="mx-auto max-w-3xl px-6 py-24 text-center md:py-32">
-          <p className="text-[10px] uppercase tracking-luxury text-gold">Personal Concierge</p>
+          <p className="text-[10px] uppercase tracking-luxury text-gold">Personal Assistance</p>
           <h1 className="mt-4 font-display text-5xl md:text-7xl">Let's Talk Scent</h1>
           <p className="mx-auto mt-6 max-w-xl text-sm text-muted-foreground">
-            For recommendations, custom blends or gifting — message our concierge directly on WhatsApp.
-            Every conversation is with a real perfumer.
+            For recommendations, custom blends, or gifting — message us directly on WhatsApp.
           </p>
         </div>
       </section>
 
       <section className="mx-auto grid max-w-5xl gap-16 px-6 py-20 md:grid-cols-2">
         <div>
-          <h2 className="font-display text-3xl">Atelier</h2>
+          <h2 className="font-display text-3xl">Get in Touch</h2>
           <ul className="mt-6 space-y-4 text-sm text-muted-foreground">
             <li>
               <span className="block text-[10px] uppercase tracking-luxury text-gold">Email</span>
@@ -74,7 +73,7 @@ function Contact() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 className="mt-2 w-full border border-border bg-background px-4 py-3 text-sm outline-none focus:border-gold"
-                placeholder="Élise VELDIOR"
+                placeholder="Your name"
               />
             </div>
             <div>
