@@ -30,13 +30,17 @@ export function CartProvider({ children }: { children: ReactNode }) {
     try {
       const raw = localStorage.getItem(STORAGE);
       if (raw) setItems(JSON.parse(raw));
-    } catch {}
+    } catch {
+      console.error("Error loading cart from localStorage");
+    }
   }, []);
 
   useEffect(() => {
     try {
       localStorage.setItem(STORAGE, JSON.stringify(items));
-    } catch {}
+    } catch {
+      console.error("Error saving cart to localStorage");
+    }
   }, [items]);
 
   const value = useMemo<CartCtx>(() => {
@@ -66,7 +70,9 @@ export function CartProvider({ children }: { children: ReactNode }) {
       remove: (id) => setItems((prev) => prev.filter((p) => p.id !== id)),
       setQty: (id, qty) =>
         setItems((prev) =>
-          qty <= 0 ? prev.filter((p) => p.id !== id) : prev.map((p) => (p.id === id ? { ...p, qty } : p)),
+          qty <= 0
+            ? prev.filter((p) => p.id !== id)
+            : prev.map((p) => (p.id === id ? { ...p, qty } : p)),
         ),
       clear: () => setItems([]),
     };
