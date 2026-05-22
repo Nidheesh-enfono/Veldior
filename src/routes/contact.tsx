@@ -48,7 +48,9 @@ function Contact() {
               {BRAND.email}
             </li>
             <li>
-              <span className="block text-[10px] uppercase tracking-luxury text-gold">Locations</span>
+              <span className="block text-[10px] uppercase tracking-luxury text-gold">
+                Location
+              </span>
               {BRAND.city}
             </li>
             <li>
