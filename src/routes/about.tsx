@@ -30,9 +30,9 @@ function About() {
         <div className="relative mx-auto max-w-5xl px-6 pb-24 text-center">
           <p className="text-[10px] uppercase tracking-luxury text-gold">Our Story</p>
 
-          <h1 className="mt-5 font-display text-5xl leading-[0.95] tracking-[-0.04em] md:text-7xl lg:text-8xl">
-            Crafted
-            <span className="block italic text-gold">Beyond Scent</span>
+          <h1 className="mt-5 font-display text-4xl leading-[0.95] tracking-[-0.04em] md:text-7xl lg:text-7xl">
+            Wear The Memory
+            {/* <span className="block italic text-gold">Beyond Scent</span> */}
           </h1>
 
           <div className="mx-auto mt-8 h-px w-16 bg-gold/30" />
