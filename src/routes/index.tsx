@@ -27,25 +27,26 @@ function Index() {
   return (
     <>
       {/* HERO */}
-      <section className="relative isolate overflow-hidden bg-noir">
-        <div className="mx-auto grid max-w-7xl gap-12 px-6 pb-20 pt-16 md:grid-cols-2 md:items-center md:gap-6 md:pb-32 md:pt-24">
+      <section className="relative isolate overflow-hidden bg-noir pt-20 md:pt-24">
+        <div className="mx-auto grid max-w-7xl gap-12 px-6 pt-28 pb-32 lg:pt-36 lg:pb-40 md:grid-cols-2 md:items-center md:gap-6 md:pb-32 md:pt-24">
           <div>
             <p className="text-[11px] uppercase tracking-luxury text-gold">{BRAND.tagline}</p>
 
-            <h1 className="mt-6 font-display text-5xl leading-[1.05] text-balance text-foreground md:text-7xl lg:text-8xl">
-              Find Your
-              <span className="block italic text-gold">Signature Fragrance</span>
+            <h1 className="mt-8 max-w-[10ch] font-display text-6xl font-semibold leading-[0.92] tracking-[-0.04em] text-foreground md:text-8xl lg:text-[7rem]">
+              Crafted
+              <span className="mt-2 block italic text-gold">For Presence</span>
             </h1>
 
-            <p className="mt-6 max-w-md text-base text-muted-foreground">
-              Explore our collection of carefully crafted fragrances made with quality ingredients.
-              Order directly through WhatsApp.
+            <p className="mt-8 max-w-sm text-[15px] leading-7 text-muted-foreground">
+              Refined fragrances inspired by depth, warmth, and quiet confidence.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link
                 to="/shop"
-                className="group inline-flex items-center gap-3 bg-gradient-gold px-8 py-4 text-xs uppercase tracking-luxury text-primary-foreground transition-transform hover:scale-[1.02]"
+                className="group inline-flex items-center gap-3 bg-gradient-gold px-8 py-4 text-xs uppercase tracking-luxury text-primary-foreground transition-all duration-500
+                hover:-translate-y-0.5
+                hover:shadow-gold"
               >
                 Shop Collection
                 <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-1" />
@@ -72,7 +73,11 @@ function Index() {
               alt="VELDIOR fragrance collection"
               width={1600}
               height={1200}
-              className="w-full object-cover"
+              className="
+              w-full object-cover
+              scale-[1.04]
+              drop-shadow-[0_40px_120px_rgba(0,0,0,0.6)]
+              "
             />
           </div>
         </div>
