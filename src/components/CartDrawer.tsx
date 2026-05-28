@@ -78,7 +78,7 @@ export function CartDrawer() {
                       <div>
                         <p className="font-display text-lg leading-tight">{i.product.name}</p>
                         <p className="text-[10px] uppercase tracking-luxury text-muted-foreground">
-                          {i.product.family} · 100ml
+                          {i.product.family} · {i.product.size}
                         </p>
                       </div>
                       <button

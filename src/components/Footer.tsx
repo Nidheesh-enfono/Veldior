@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/veldior-logo.png";
+import logo from "@/assets/veldior-logo-only.png";
 import { BRAND } from "@/config/brand";
 import { whatsappInquiryUrl } from "@/lib/whatsapp";
 
@@ -9,8 +9,8 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-3">
-              <img src={logo} alt={BRAND.name} className="h-14 w-14 object-contain" />
+            <div className="flex items-center gap-1">
+              <img src={logo} alt={BRAND.name} className="h-14 w-14 object-contain mt-0.2" />
               <span className="font-display text-2xl tracking-[0.25em] text-gold">VELDIOR</span>
             </div>
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">
@@ -63,7 +63,7 @@ export function Footer() {
           <p>
             © {new Date().getFullYear()} {BRAND.name}.
           </p>
-          <p>Crafted with rare essences</p>
+          <p>Creating scents · Defining luxury</p>
         </div>
       </div>
     </footer>

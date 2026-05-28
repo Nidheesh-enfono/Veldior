@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ShoppingBag, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useCart } from "@/lib/cart";
-import logo from "@/assets/veldior-logo.png";
+import logo from "@/assets/veldior-logo-only.png";
 import { BRAND } from "@/config/brand";
 
 export function Header() {
@@ -19,8 +19,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-        <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt={BRAND.name} className="h-12 w-12 object-contain" />
+        <Link to="/" className="flex items-center gap-1">
+          <img src={logo} alt={BRAND.name} className="h-12 w-12 object-contain mt-0.2" />
           <span className="hidden font-display text-2xl tracking-[0.25em] text-gold sm:inline">
             VELDIOR
           </span>
