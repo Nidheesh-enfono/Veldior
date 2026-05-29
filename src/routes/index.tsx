@@ -85,16 +85,24 @@ function Index() {
 
       {/* INFO BAR */}
       <section className="border-y border-border/60 bg-card/30">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-around gap-6 px-6 py-6 text-[10px] uppercase tracking-luxury text-muted-foreground">
-          <span>Hand-blended in {BRAND.city.split(" · ")[0]}</span>
+        <div className="mx-auto max-w-7xl px-6 py-5">
+          <div className="hidden sm:flex items-center justify-center  gap-6 px-6 py-6 text-xs uppercase tracking-[0.35em] text-muted-foreground">
+            <span>Hand-blended in {BRAND.city.split(" · ")[0]}</span>
 
-          <span className="text-gold">◆</span>
+            <span className="text-gold">◆</span>
 
-          <span>WhatsApp Support</span>
+            <span>WhatsApp Support</span>
 
-          <span className="text-gold">◆</span>
+            <span className="text-gold">◆</span>
 
-          <span>Quality Ingredients</span>
+            <span>Quality Ingredients</span>
+          </div>
+
+          <div className="flex flex-col items-center gap-4 text-[10px] uppercase tracking-[0.3em] text-muted-foreground sm:hidden">
+            <span>Hand-blended in {BRAND.city.split(" · ")[0]}</span>
+            <span>WhatsApp Support</span>
+            <span>Quality Ingredients</span>
+          </div>
         </div>
       </section>
 
