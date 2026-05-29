@@ -62,20 +62,40 @@ function About() {
 
       {/* INFO STRIP */}
       <section className="border-y border-border/60 bg-card/20 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-around gap-6 px-6 py-6 text-[10px] uppercase tracking-luxury text-muted-foreground">
-          <span>Small Batch Crafted</span>
+        <div className="mx-auto max-w-7xl px-4 py-5">
+          {/* Desktop */}
+          <div className="hidden sm:flex items-center justify-center gap-5 text-center text-xs uppercase tracking-[0.35em] text-muted-foreground">
+            <span className="whitespace-nowrap">Small Batch Crafted</span>
 
-          <span className="text-gold">◆</span>
+            <span className="text-gold text-[12px]">◆</span>
 
-          <span>Premium Ingredients</span>
+            <span className="whitespace-nowrap">Premium Ingredients</span>
 
-          <span className="text-gold">◆</span>
+            <span className="text-gold text-[12px]">◆</span>
 
-          <span>Long Lasting Fragrances</span>
+            <span className="whitespace-nowrap">Long Lasting Fragrances</span>
 
-          <span className="text-gold">◆</span>
+            <span className="text-gold text-[12px]">◆</span>
 
-          <span>WhatsApp Support</span>
+            <span className="whitespace-nowrap">WhatsApp Support</span>
+          </div>
+
+          {/* Mobile */}
+          <div className="flex flex-col items-center gap-4 text-center text-[10px] uppercase tracking-[0.3em] text-muted-foreground sm:hidden">
+            <span>Small Batch Crafted</span>
+
+            <span className="h-px w-10 bg-gold/40" />
+
+            <span>Premium Ingredients</span>
+
+            <span className="h-px w-10 bg-gold/40" />
+
+            <span>Long Lasting Fragrances</span>
+
+            <span className="h-px w-10 bg-gold/40" />
+
+            <span>WhatsApp Support</span>
+          </div>
         </div>
       </section>
 
