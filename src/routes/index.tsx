@@ -27,7 +27,7 @@ function Index() {
   return (
     <>
       {/* HERO */}
-      <section className="relative isolate overflow-hidden bg-noir pt-12 md:pt-20">
+      <section className="relative isolate overflow-hidden bg-noir pt-8 md:pt-20">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 pt-24 pb-32 lg:pt-32 lg:pb-40 md:grid-cols-2 md:items-center md:gap-6 md:pb-32 md:pt-20">
           <div>
             <p className="text-[11px] uppercase tracking-luxury text-gold">{BRAND.tagline}</p>
