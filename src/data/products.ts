@@ -35,7 +35,7 @@ export const products: Product[] = [
     description:
       "A luxurious blend of black currant, violet leaf, iris pallida, and heliotrope. A soft, sweet fragrance that is perfect for everyday wear.",
     price: 1799,
-    size: "50 ml",
+    size: "60 ml",
     image: p4,
   },
   {
@@ -51,7 +51,7 @@ export const products: Product[] = [
     description:
       "A luxurious blend of black currant, violet leaf, iris pallida, and heliotrope. A soft, sweet fragrance that is perfect for everyday wear.",
     price: 1799,
-    size: "50 ml",
+    size: "60 ml",
     image: p1,
   },
   {
@@ -67,7 +67,7 @@ export const products: Product[] = [
     description:
       "A luxurious blend of black currant, violet leaf, iris pallida, and heliotrope. A soft, sweet fragrance that is perfect for everyday wear.",
     price: 1799,
-    size: "50 ml",
+    size: "60 ml",
     image: p2,
   },
 ];
