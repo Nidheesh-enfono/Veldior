@@ -1,5 +1,5 @@
 import p1 from "@/assets/v-bloom.png";
-import p2 from "@/assets/perfume-2.jpg";
+import p2 from "@/assets/v-nova.png";
 import p3 from "@/assets/perfume-3.jpg";
 import p4 from "@/assets/v-aura.png";
 
@@ -35,7 +35,7 @@ export const products: Product[] = [
     description:
       "A luxurious blend of black currant, violet leaf, iris pallida, and heliotrope. A soft, sweet fragrance that is perfect for everyday wear.",
     price: 1799,
-    size: "60 ml",
+    size: "50 ml",
     image: p4,
   },
   {
@@ -51,25 +51,25 @@ export const products: Product[] = [
     description:
       "A luxurious blend of black currant, violet leaf, iris pallida, and heliotrope. A soft, sweet fragrance that is perfect for everyday wear.",
     price: 1799,
-    size: "60 ml",
+    size: "50 ml",
     image: p1,
   },
-  // {
-  //   id: "rose-velours",
-  //   name: "Rose Velours",
-  //   tagline: "Damask rose & benzoin",
-  //   family: "Floral Amber",
-  //   notes: {
-  //     top: ["Bergamot", "Pink Pepper"],
-  //     heart: ["Damask Rose", "Peony"],
-  //     base: ["Benzoin", "Vanilla"],
-  //   },
-  //   description:
-  //     "A velvet rose drenched in amber glow. Romantic without sweetness, with a creamy benzoin trail that lingers on skin.",
-  //   price: 3900,
-  //   size: "75 ml",
-  //   image: p2,
-  // },
+  {
+    id: "veldior-nova",
+    name: "Veldior Nova",
+    tagline: "Nova of luxury",
+    family: "Oriental Woody",
+    notes: {
+      top: ["Black Currant", "Iris Pallida"],
+      heart: ["Iris Pallida", "Heliotrope"],
+      base: ["White Musk", "Patchouli"],
+    },
+    description:
+      "A luxurious blend of black currant, violet leaf, iris pallida, and heliotrope. A soft, sweet fragrance that is perfect for everyday wear.",
+    price: 1799,
+    size: "50 ml",
+    image: p2,
+  },
 ];
 
 export const getProduct = (id: string) => products.find((p) => p.id === id);
