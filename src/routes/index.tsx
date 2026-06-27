@@ -1,10 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
+import { BRAND } from "@/config/brand";
 import { products } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
-import { BRAND } from "@/config/brand";
 import { whatsappInquiryUrl } from "@/lib/whatsapp";
 import hero from "@/assets/hero-perfume.png";
+import comingSoon from "@/assets/coming-soon.png";
 
 export const Route = createFileRoute("/")({
   component: Index,

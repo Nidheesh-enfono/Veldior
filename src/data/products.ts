@@ -1,7 +1,7 @@
-import p1 from "@/assets/perfume-1.jpg";
+import p1 from "@/assets/v-bloom.png";
 import p2 from "@/assets/perfume-2.jpg";
 import p3 from "@/assets/perfume-3.jpg";
-import p4 from "@/assets/perfume-4.jpg";
+import p4 from "@/assets/v-aura.png";
 
 export interface ProductNotes {
   top: string[];
@@ -23,53 +23,53 @@ export interface Product {
 
 export const products: Product[] = [
   {
-    id: "velour-noctis",
-    name: "Velour Noctis",
-    tagline: "Violet, musk & ink",
-    family: "Chypre Floral",
+    id: "veldior-aura",
+    name: "Veldior Aura",
+    tagline: "Aura of luxury",
+    family: "Floral Amber",
     notes: {
-      top: ["Black Currant", "Violet Leaf"],
+      top: ["Black Currant", "Iris Pallida"],
       heart: ["Iris Pallida", "Heliotrope"],
       base: ["White Musk", "Patchouli"],
     },
     description:
-      "Powdered violet wrapped in soft musk. A quiet, intimate perfume that whispers rather than announces.",
-    price: 4200,
-    size: "75 ml",
+      "A luxurious blend of black currant, violet leaf, iris pallida, and heliotrope. A soft, sweet fragrance that is perfect for everyday wear.",
+    price: 1799,
+    size: "60 ml",
     image: p4,
   },
   {
-    id: "sable-oud",
-    name: "Sable Oud",
-    tagline: "Oud, saffron & amber",
+    id: "veldior-bloom",
+    name: "Veldior Bloom",
+    tagline: "Bloom of luxury",
     family: "Oriental Woody",
     notes: {
-      top: ["Saffron", "Cardamom"],
-      heart: ["Oud Assam", "Rose de Mai"],
-      base: ["Amber Resin", "Sandalwood"],
+      top: ["Black Currant", "Iris Pallida"],
+      heart: ["Iris Pallida", "Heliotrope"],
+      base: ["White Musk", "Patchouli"],
     },
     description:
-      "Smoky oud lifted by saffron and dried rose. Warm, resinous, and unapologetically opulent from first spray to dry down.",
-    price: 4800,
-    size: "75 ml",
+      "A luxurious blend of black currant, violet leaf, iris pallida, and heliotrope. A soft, sweet fragrance that is perfect for everyday wear.",
+    price: 1799,
+    size: "60 ml",
     image: p1,
   },
-  {
-    id: "rose-velours",
-    name: "Rose Velours",
-    tagline: "Damask rose & benzoin",
-    family: "Floral Amber",
-    notes: {
-      top: ["Bergamot", "Pink Pepper"],
-      heart: ["Damask Rose", "Peony"],
-      base: ["Benzoin", "Vanilla"],
-    },
-    description:
-      "A velvet rose drenched in amber glow. Romantic without sweetness, with a creamy benzoin trail that lingers on skin.",
-    price: 3900,
-    size: "75 ml",
-    image: p2,
-  },
+  // {
+  //   id: "rose-velours",
+  //   name: "Rose Velours",
+  //   tagline: "Damask rose & benzoin",
+  //   family: "Floral Amber",
+  //   notes: {
+  //     top: ["Bergamot", "Pink Pepper"],
+  //     heart: ["Damask Rose", "Peony"],
+  //     base: ["Benzoin", "Vanilla"],
+  //   },
+  //   description:
+  //     "A velvet rose drenched in amber glow. Romantic without sweetness, with a creamy benzoin trail that lingers on skin.",
+  //   price: 3900,
+  //   size: "75 ml",
+  //   image: p2,
+  // },
 ];
 
 export const getProduct = (id: string) => products.find((p) => p.id === id);

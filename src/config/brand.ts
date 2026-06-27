@@ -4,7 +4,7 @@ export const BRAND = {
   name: "VELDIOR",
   tagline: "Crafting Scents. Defining Luxury.",
   whatsappNumber: "919961659471",
-  email: "veldiorfragrance@gmail.com",
+  email: "veldiorfragrances@gmail.com",
   city: "India",
   currency: "INR",
   currencySymbol: "₹",

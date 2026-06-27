@@ -107,7 +107,7 @@ export function Footer() {
               </a>
 
               <a
-                href="#"
+                href="https://www.instagram.com/veldior.fragrance_/"
                 className="
                   group
                   flex
